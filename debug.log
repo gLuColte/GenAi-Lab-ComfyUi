@@ -1,0 +1,219 @@
+Checkpoint files will always be loaded safely.
+Total VRAM 131072 MB, total RAM 131072 MB
+pytorch version: 2.5.1
+Mac Version (15, 6, 1)
+Set vram state to: SHARED
+Device: mps
+Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
+Loading FFmpeg6
+Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: dlopen(/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/lib/libtorio_ffmpeg6.so, 0x0006): Library not loaded: @rpath/libavutil.58.dylib
+  Referenced from: <2CE67C06-BDEB-3F80-96E3-4F103BB9AEEC> /Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/lib/libtorio_ffmpeg6.so
+  Reason: tried: '/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/lib-dynload/../../libavutil.58.dylib' (no such file), '/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/bin/../lib/libavutil.58.dylib' (no such file)
+Loading FFmpeg5
+Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: dlopen(/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/lib/libtorio_ffmpeg5.so, 0x0006): Library not loaded: @rpath/libavutil.57.dylib
+  Referenced from: <18EE5C42-210E-3E8B-81B0-37AB03553D41> /Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/lib/libtorio_ffmpeg5.so
+  Reason: tried: '/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/lib-dynload/../../libavutil.57.dylib' (no such file), '/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/bin/../lib/libavutil.57.dylib' (no such file)
+Loading FFmpeg4
+Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: dlopen(/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/lib/libtorio_ffmpeg4.so, 0x0006): Library not loaded: @rpath/libavutil.56.dylib
+  Referenced from: <991D7190-DAB8-3DA1-A934-0A5FF14C3C78> /Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/lib/libtorio_ffmpeg4.so
+  Reason: tried: '/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/lib-dynload/../../libavutil.56.dylib' (no such file), '/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/bin/../lib/libavutil.56.dylib' (no such file)
+Loading FFmpeg
+Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/torio/_extension/utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+Python version: 3.12.11 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 08:03:38) [Clang 14.0.6 ]
+ComfyUI version: 0.3.57
+Using selector: KqueueSelector
+ComfyUI frontend version: 1.25.11
+[Prompt Server] web root: /Users/garylu/anaconda3/envs/genai-lab-ComfyUi-env-1/lib/python3.12/site-packages/comfyui_frontend_package/static
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_latent.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_hypernetwork.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_upscale_model.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_post_processing.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_mask.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_compositing.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_rebatch.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_model_merging.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_tomesd.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_clip_sdxl.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_canny.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_freelunch.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_custom_sampler.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_hypertile.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_model_advanced.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_model_downscale.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_images.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_video_model.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_train.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_sag.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_perpneg.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_stable3d.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_sdupscale.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_photomaker.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_pixart.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_cond.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_morphology.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_stable_cascade.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_differential_diffusion.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_ip2p.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_model_merging_model_specific.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_pag.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_align_your_steps.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_attention_multiply.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_advanced_samplers.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_webcam.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_audio.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_sd3.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_gits.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_controlnet.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_hunyuan.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_flux.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_lora_extract.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_torch_compile.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_mochi.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_slg.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_mahiro.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_lt.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_hooks.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_load_3d.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_cosmos.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_video.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_lumina2.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_wan.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_lotus.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_hunyuan3d.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_primitive.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_cfg.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_optimalsteps.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_hidream.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_fresca.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_apg.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_preview_any.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_ace.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_string.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_camera_trajectory.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_edit_model.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_tcfg.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_context_windows.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_qwen.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_model_patch.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_easycache.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_extras/nodes_audio_encoder.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/canary.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_ideogram.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_openai.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_minimax.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_veo2.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_kling.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_bfl.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_bytedance.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_luma.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_recraft.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_pixverse.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_stability.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_pika.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_runway.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_tripo.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_moonvalley.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_rodin.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_gemini.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/comfy_api_nodes/nodes_vidu.py
+Trying to load custom node /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/custom_nodes/websocket_image_save.py
+
+Import times for custom nodes:
+   0.0 seconds: /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/custom_nodes/websocket_image_save.py
+
+Database URL: sqlite:////Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/user/comfyui.db
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+No target revision found.
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/checkpoints
+found 3 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/vae
+found 5 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/vae_approx
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/loras
+found 3 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/text_encoders
+found 2 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/clip
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/unet
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/diffusion_models
+found 3 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/controlnet
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/style_models
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/clip_vision
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/gligen
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/configs
+found 11 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/hypernetworks
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/upscale_models
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/photomaker
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/model_patches
+found 1 files
+recursive file list on directory /Users/garylu/Documents/Repositories/GenAi-Lab-ComfyUi/comfyui/models/audio_encoders
+found 1 files
+Feature flags negotiated for client d9fa7cc657624ee3b35315854e09d053: {'supports_preview_metadata': True}
+Feature flags negotiated for client d9fa7cc657624ee3b35315854e09d053: {'supports_preview_metadata': True}
+
+Stopped server
