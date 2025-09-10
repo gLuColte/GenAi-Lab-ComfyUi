@@ -24,7 +24,7 @@ The goal is to spin up ComfyUI completely from scratch in an isolated conda envi
    ```bash
    git clone --recurse-submodules https://github.com/<your-username>/GenAI-Lab-ComfyUi.git
    cd GenAI-Lab-ComfyUi
-````
+   ```
 
 2. Run the macOS setup script (it will ask you to name your environment, e.g. `comfyui-env`):
 
