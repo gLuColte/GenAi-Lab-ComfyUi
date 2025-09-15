@@ -1,0 +1,405 @@
+{
+    "id": "4391bf5c-6fc6-4a8c-aceb-0332ded5b17f",
+    "revision": 0,
+    "last_node_id": 9,
+    "last_link_id": 9,
+    "nodes": [
+      {
+        "id": 4,
+        "type": "CheckpointLoaderSimple",
+        "pos": [
+          81.8648681640625,
+          186.9703826904297
+        ],
+        "size": [
+          315,
+          98
+        ],
+        "flags": {},
+        "order": 0,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "MODEL",
+            "type": "MODEL",
+            "slot_index": 0,
+            "links": [
+              1
+            ]
+          },
+          {
+            "name": "CLIP",
+            "type": "CLIP",
+            "slot_index": 1,
+            "links": [
+              3,
+              5
+            ]
+          },
+          {
+            "name": "VAE",
+            "type": "VAE",
+            "slot_index": 2,
+            "links": [
+              8
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.3.57",
+          "Node name for S&R": "CheckpointLoaderSimple",
+          "models": [
+            {
+              "name": "v1-5-pruned-emaonly-fp16.safetensors",
+              "url": "https://huggingface.co/Comfy-Org/stable-diffusion-v1-5-archive/resolve/main/v1-5-pruned-emaonly-fp16.safetensors?download=true",
+              "directory": "checkpoints"
+            }
+          ]
+        },
+        "widgets_values": [
+          "WAI-NSFW-illustrious-SDXL-v14.safetensors"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "CLIPTextEncode",
+        "pos": [
+          415,
+          186
+        ],
+        "size": [
+          422.84503173828125,
+          164.31304931640625
+        ],
+        "flags": {},
+        "order": 2,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "clip",
+            "type": "CLIP",
+            "link": 3
+          }
+        ],
+        "outputs": [
+          {
+            "name": "CONDITIONING",
+            "type": "CONDITIONING",
+            "slot_index": 0,
+            "links": [
+              4
+            ]
+          }
+        ],
+        "title": "Positive Prompt",
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.3.57",
+          "Node name for S&R": "CLIPTextEncode"
+        },
+        "widgets_values": [
+          "1dog, shiba inu, astronaut, space suit, shiny helmet, sitting, on throne, crossed legs, head tilt, holding flag, lunar background, cowboy shot, depth of field, faux traditional media, painterly, impressionism, photo background, anime style\n"
+        ]
+      },
+      {
+        "id": 7,
+        "type": "CLIPTextEncode",
+        "pos": [
+          413,
+          389
+        ],
+        "size": [
+          425.27801513671875,
+          180.6060791015625
+        ],
+        "flags": {},
+        "order": 3,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "clip",
+            "type": "CLIP",
+            "link": 5
+          }
+        ],
+        "outputs": [
+          {
+            "name": "CONDITIONING",
+            "type": "CONDITIONING",
+            "slot_index": 0,
+            "links": [
+              6
+            ]
+          }
+        ],
+        "title": "Negative Prompt",
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.3.57",
+          "Node name for S&R": "CLIPTextEncode"
+        },
+        "widgets_values": [
+          "sensitive, nsfw, explicit, bad quality, worst quality, low detail, sketch, censored, deformed, mutated, extra limbs, disfigured\n"
+        ]
+      },
+      {
+        "id": 8,
+        "type": "VAEDecode",
+        "pos": [
+          1192.25439453125,
+          190.3533172607422
+        ],
+        "size": [
+          210,
+          46
+        ],
+        "flags": {},
+        "order": 5,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "samples",
+            "type": "LATENT",
+            "link": 7
+          },
+          {
+            "name": "vae",
+            "type": "VAE",
+            "link": 8
+          }
+        ],
+        "outputs": [
+          {
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "slot_index": 0,
+            "links": [
+              9
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.3.57",
+          "Node name for S&R": "VAEDecode"
+        },
+        "widgets_values": []
+      },
+      {
+        "id": 9,
+        "type": "SaveImage",
+        "pos": [
+          1419.42724609375,
+          192.1776123046875
+        ],
+        "size": [
+          453.78961181640625,
+          544.86083984375
+        ],
+        "flags": {},
+        "order": 6,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "images",
+            "type": "IMAGE",
+            "link": 9
+          }
+        ],
+        "outputs": [],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.3.57"
+        },
+        "widgets_values": [
+          "ComfyUI"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "EmptyLatentImage",
+        "pos": [
+          416.4566345214844,
+          -17.935749053955078
+        ],
+        "size": [
+          419.1073303222656,
+          152.42625427246094
+        ],
+        "flags": {},
+        "order": 1,
+        "mode": 0,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "LATENT",
+            "type": "LATENT",
+            "slot_index": 0,
+            "links": [
+              2
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.3.57",
+          "Node name for S&R": "EmptyLatentImage"
+        },
+        "widgets_values": [
+          1248,
+          1824,
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "type": "KSampler",
+        "pos": [
+          859.4485473632812,
+          185.53958129882812
+        ],
+        "size": [
+          315,
+          262
+        ],
+        "flags": {},
+        "order": 4,
+        "mode": 0,
+        "inputs": [
+          {
+            "name": "model",
+            "type": "MODEL",
+            "link": 1
+          },
+          {
+            "name": "positive",
+            "type": "CONDITIONING",
+            "link": 4
+          },
+          {
+            "name": "negative",
+            "type": "CONDITIONING",
+            "link": 6
+          },
+          {
+            "name": "latent_image",
+            "type": "LATENT",
+            "link": 2
+          }
+        ],
+        "outputs": [
+          {
+            "name": "LATENT",
+            "type": "LATENT",
+            "slot_index": 0,
+            "links": [
+              7
+            ]
+          }
+        ],
+        "properties": {
+          "cnr_id": "comfy-core",
+          "ver": "0.3.57",
+          "Node name for S&R": "KSampler"
+        },
+        "widgets_values": [
+          1093307891347418,
+          "randomize",
+          20,
+          8,
+          "euler",
+          "karras",
+          1
+        ]
+      }
+    ],
+    "links": [
+      [
+        1,
+        4,
+        0,
+        3,
+        0,
+        "MODEL"
+      ],
+      [
+        2,
+        5,
+        0,
+        3,
+        3,
+        "LATENT"
+      ],
+      [
+        3,
+        4,
+        1,
+        6,
+        0,
+        "CLIP"
+      ],
+      [
+        4,
+        6,
+        0,
+        3,
+        1,
+        "CONDITIONING"
+      ],
+      [
+        5,
+        4,
+        1,
+        7,
+        0,
+        "CLIP"
+      ],
+      [
+        6,
+        7,
+        0,
+        3,
+        2,
+        "CONDITIONING"
+      ],
+      [
+        7,
+        3,
+        0,
+        8,
+        0,
+        "LATENT"
+      ],
+      [
+        8,
+        4,
+        2,
+        8,
+        1,
+        "VAE"
+      ],
+      [
+        9,
+        8,
+        0,
+        9,
+        0,
+        "IMAGE"
+      ]
+    ],
+    "groups": [],
+    "config": {},
+    "extra": {
+      "ds": {
+        "scale": 0.7072542776994724,
+        "offset": [
+          -39.77208242110416,
+          608.5325127067798
+        ]
+      },
+      "frontendVersion": "1.25.11"
+    },
+    "version": 0.4
+  }
